@@ -17,19 +17,6 @@ export default function App() {
     getUsers();
   }, []);
 
-  /* function sortNames(sortBy, sortOrder) {
-    let sortedArray;
-    if (sortOrder)
-      sortedArray = [...users].sort(
-        (a, b) => (a[sortBy] > b[sortBy]) - (a[sortBy] < b[sortBy])
-      );
-    else
-      sortedArray = [...users].sort(
-        (a, b) => (a[sortBy] < b[sortBy]) - (a[[sortBy]] > b[sortBy])
-      );
-    return sortedArray;
-  } */
-
   const sortNames = useCallback(
     (sortBy, sortOrder) => {
       let sortedArray;
